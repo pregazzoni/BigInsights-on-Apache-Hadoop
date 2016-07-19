@@ -44,14 +44,6 @@ See the 5 minute demo at the end of the README to see these steps in action.
 - Run `./gradlew DownloadCertificate` (unix) `gradlew.bat DownloadCertificate` (windows) to download the ssl certificate - you may want to visually verify this certificate
 - Run `./gradlew DownloadLibs` (unix) `gradlew.bat DownloadLibs` (windows) to download libraries from the cluster
 
-Now run the WebHdfsGroovy example to list the folders in hdfs:
-- Run `./gradlew -p examples/WebHdfsGroovy Ls` (unix) `gradlew.bat -p examples\WebHdfsGroovy Ls` (windows)
-- if you receive errors like 'Could not download XXX' retry a few times
-
-Optional: run tests (this takes approximately 40 mins on my cluster)
-- Run `./gradlew test` (unix) `gradlew.bat test` (windows) to run the whole set of examples as a test (detailed output for the tests can be found in the folder `./build/test/`).  
-- if you receive errors like 'Could not download XXX' retry a few times
-
 Next, see the section below for details of running an example script.
 
 *********************************************************************
@@ -77,25 +69,3 @@ Each example project has a README.md file describing how to run the project.  Al
 
 *********************************************************************
 
-### 5 Minute Demo
-
-To watch a 5 Minute Demo setting up the project and running an example, see [here](./DEMO_README.md).
-
-*********************************************************************
-
-### Smoke testing your cluster
-
-The examples can be used to smoke test your cluster.  For more information, see [here](./SMOKETESTING_README.md).
-
-
-*********************************************************************
-
-### Tips
-
-For some tips using this project, for example with multiple clusters, see [here](./TIPS_README.md).
-
-*********************************************************************
-
-### Contributing
-
-Contributions are welcome.  Please send a pull request or contact me at chris.snow@uk.ibm.com to get involved.
