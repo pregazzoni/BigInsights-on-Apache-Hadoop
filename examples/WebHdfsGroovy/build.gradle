@@ -44,17 +44,20 @@ sourceSets {
 ['Ls', 'Mkdir', 'Put'].each { taskName ->
    task "$taskName" (type: JavaExec) {
 
+    // pass the connection details from the connection.properties file
+    // as environment variables that can be accessed from the example groovy script
+    
     environment 'gateway', props.gateway
     environment 'username', props.username
     environment 'password', props.password
 
+    // compile the groovy script and run it as a java application
+    
     main = taskName
     classpath = sourceSets.main.runtimeClasspath
    }
 }
 
 task('Example') {
-
     dependsOn Ls, Mkdir, Put
-
 }
