@@ -26,10 +26,14 @@ Follow these steps on your client machine.  If you encounter an issue, see the [
 
 - Clone this repository `git clone https://github.com/snowch/biginsight-examples.git`
 - Copy `connection.properties_template` to `connection.properties`
-- Edit `connection.properties` to add your connection details for BigInsights and other optional services such as dashDB
+- Edit `connection.properties` to add your connection details for BigInsights
 - In `connection.properties` uncomment the line `# known_hosts:allowAnyHosts`
-- Run `./gradlew DownloadCertificate` (OS X/*nix) or `gradlew.bat DownloadCertificate` (Windows) to download the ssl certificate
-- Run `./gradlew DownloadLibs` (OS X/*nix) or `gradlew.bat DownloadLibs` (Windows) to download libraries from the cluster
+- Download the ssl certificate
+  - Run `./gradlew DownloadCertificate` (OS X / *nix) 
+  - Run `gradlew.bat DownloadCertificate` (Windows)
+- Download libraries from the cluster
+  - Run `./gradlew DownloadLibs` (OS X / *nix)
+  - Run `gradlew.bat DownloadLibs` (Windows)
 
 Next, see the section below for details of running an example script.
 
@@ -60,4 +64,17 @@ The output shows the list of files and directories, e.g. `[app-logs, apps, bigin
 ### List of examples
 
 Each example project has a README.md file describing how to run the project.  All of the example projects are available in the [[examples](examples)] folder.
+
+
+*********************************************************************
+
+### Getting Help
+
+Find us on [Stack Overflow](https://stackoverflow.com/questions/tagged/biginsight-examples)
+
+*********************************************************************
+
+### Contributing updates to the guidelines
+
+To update the guidelines, please fork the repository, make changes, and create a pull request. When updating one of the sample READMEs, update the other sample versions where applicable.
 
