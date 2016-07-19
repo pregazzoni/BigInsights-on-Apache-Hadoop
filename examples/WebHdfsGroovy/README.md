@@ -26,6 +26,7 @@ See also:
 
 ## Devloper experience
 
+- Be comfortable using Windows, OS X or *nix command prompts
 - Be able to read code written in a high level language such as [Groovy](http://www.groovy-lang.org/)
 - It is recommended that you understand the [Gradle](https://gradle.org/) build tool.  Some free training is available [here](https://www.udacity.com/course/gradle-for-android-and-java--ud867)
 
@@ -35,12 +36,18 @@ You have meet the Pre-Requisites and have followed the Setup Instructions in the
 
 ## Run the example
 
-- In a command prompt window, change into the directly containing this README and run the following
-   - `./gradlew Example` (OS X / *nix)
-   - `gradlew.bat Example` (Windows)
-- You can also run the example from the top level project folder using the gradle `-p` argument
-   - `./gradlew -p examples/WebHdfsGroovy Example` (OS X / *nix)
-   - `gradlew.bat -p examples/WebHdfsGroovy Example` (Windows)
+To run the example [Ls.groovy](./Ls.groovy):
+
+- In a command prompt window:
+
+   - change into the directly containing this README and run the following
+      - `./gradlew Ls` (OS X / *nix)
+      - `gradlew.bat Ls` (Windows)
+   - You can also run the example by changing into the top level project folder, and then using the gradle `-p` argument to provide the path to this example
+      - `./gradlew -p examples/WebHdfsGroovy Ls` (OS X / *nix)
+      - `gradlew.bat -p examples/WebHdfsGroovy Ls` (Windows)
+
+Replace `Ls` with `Mkdir` to run the example to create a directory in HDFS, or `Put` to upload a file to HDFS.
 
 ## Decomposition Instructions
 
