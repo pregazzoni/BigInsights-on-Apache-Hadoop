@@ -9,7 +9,7 @@ BigInsights for Apache Hadoop clusters are secured using [Apache Knox](https://k
 
 The Apache Knox project provides a [Java client library](https://cwiki.apache.org/confluence/display/KNOX/Client+Usage) and this can be used for interacting with the REST API.  Using a library is usally more productive because the library provides a higher level of abstraction than when working directly with the REST API.
 
-There are three examples in this folder written in the [Groovy Language](http://www.groovy-lang.org/) 
+There are three examples in this folder written in the [Groovy Language](http://www.groovy-lang.org/) and the Knox Java client library:
 
 - [Ls.groovy](./Ls.groovy) - this example lists files and folders in the root HDFS folder
 - [Mkdir.groovy](./Mkdir.groovy) - this example creates a folder in HDFS
