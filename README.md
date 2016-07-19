@@ -7,10 +7,6 @@ This repository contains example projects to help you quickly get started with B
 
 The core idea is that you can run an example project to see it working against your BigInsights cluster. You can then copy the project and adapt it to add your own custom logic.  Think of the example projects as working blueprints.  A design decision was taken that the build scripts should be as independent as possible to allow developers to take a standalone example script project and reuse it with minimal effort.
 
-See the 5 minute demo at the end of the README to watch an example of setting up the biginsight-examples project and then run 'ls /' on the cluster using the Knox webHdfs API.
-
-Also see [this repository](https://github.com/snowch/bluemix-spark-submit/blob/master/README.md) for example projects for Apache Spark on Bluemix.
-
 *********************************************************************
 
 ### Pre-requisites
@@ -20,14 +16,6 @@ Also see [this repository](https://github.com/snowch/bluemix-spark-submit/blob/m
 - A BigInsights cluster
 - Java 8 JDK installed on your local machine
 - Git client installed on your local macine
-- You are comfortable running commands in the terminal or console
-
-#### Optional
-
-- Cloudant account details (e.g. Free tier on Bluemix)
-- dashDB account details (e.g. Free tier on Bluemix)
-- Objectstore container details (e.g. Free tier on Bluemix)
-- Elasticsearch cluster (e.g. Free trial on Compose.io)
 
 NOTE: You do NOT need to install gradle, the gradlew scripts mentioned below will install gradle for you
 
@@ -35,21 +23,21 @@ NOTE: You do NOT need to install gradle, the gradlew scripts mentioned below wil
 
 See the [FAQ](./FAQ.md) for common issues and their resolution.
 
-See the 5 minute demo at the end of the README to see these steps in action.
-
 - Clone this repository `git clone https://github.com/snowch/biginsight-examples.git`
 - Copy `connection.properties_template` to `connection.properties`
 - Edit `connection.properties` to add your connection details for BigInsights and other optional services such as dashDB
 - In `connection.properties` uncomment the line `# known_hosts:allowAnyHosts`
-- Run `./gradlew DownloadCertificate` (unix) `gradlew.bat DownloadCertificate` (windows) to download the ssl certificate - you may want to visually verify this certificate
-- Run `./gradlew DownloadLibs` (unix) `gradlew.bat DownloadLibs` (windows) to download libraries from the cluster
+- Run `./gradlew DownloadCertificate` (OS X/*nix) or `gradlew.bat DownloadCertificate` (Windows) to download the ssl certificate
+- Run `./gradlew DownloadLibs` (OS X/*nix) or `gradlew.bat DownloadLibs` (Windows) to download libraries from the cluster
 
 Next, see the section below for details of running an example script.
 
 *********************************************************************
 ### Running the scripts
 
-After performing the setup steps, here is the output from running the WebHdfsGroovy Ls example to list the files and directories in the hdfs root directory:
+After performing the setup steps, you can look at the README for the example you wish to run (see the list of [[examples](examples)] here) to understand more about the example. 
+
+As a taster, here is how you can run the WebHdfsGroovy Ls example which lists the files and directories in the hdfs root directory:
 
 ```bash
 biginsight-examples snowch$ ./gradlew -p examples/WebHdfsGroovy Ls
@@ -64,7 +52,7 @@ BUILD SUCCESSFUL
 
 Total time: 4.899 secs
 ```
-
+The output shows the list of files and directories, e.g. `[app-logs, apps, biginsights, ibmpacks, iop, mapred, mr-history, secureDir, securedir, tmp, user]`
 
 *********************************************************************
 
