@@ -23,8 +23,6 @@ More information:
 See also:
 
 - [WebHdfsCurl example](./WebHdfsCurl) this example will be useful for developers who want to use only REST to interact with the API and don't want to use the knox client library, e.g. non-JVM language developers.
-- 
-******
 
 ## Devloper experience
 
