@@ -65,7 +65,10 @@ BUILD SUCCESSFUL
 Total time: 4.899 secs
 ```
 
-Each example project has a README.md file describing how to run the project.  All of the example projects are available in the [[examples](examples)] folder.
 
 *********************************************************************
+
+### List of examples
+
+Each example project has a README.md file describing how to run the project.  All of the example projects are available in the [[examples](examples)] folder.
 
