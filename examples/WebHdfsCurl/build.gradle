@@ -18,7 +18,7 @@ task('Test') {
     dependsOn Ls, Mkdir, Put
 }
 
-// this test will be removed when tests uses Test target
+// run all of the examples
 task('Example') {
     dependsOn Ls, Mkdir, Put
 }
