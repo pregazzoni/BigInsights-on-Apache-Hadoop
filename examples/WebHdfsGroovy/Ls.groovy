@@ -24,7 +24,7 @@ env = System.getenv()
 
 session = Hadoop.login( env.gateway, env.username, env.password )
 
-// list files in the root folder
+// list files in the root folder '/'
 text = Hdfs.ls( session ).dir( "/" ).now().string
 json = (new JsonSlurper()).parseText( text )
 
