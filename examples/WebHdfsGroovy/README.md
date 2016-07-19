@@ -35,7 +35,7 @@ Developers will gain the most from these examples if they are:
 
 ## Application Requirements
 
-You have meet the Pre-Requisites and have followed the Setup Instructions in the top level [README](../README.md)
+You have met the [pre-requisites](../../README.md#pre-requisites) and have followed the [setup instructions](../../README.md#setup-instructions) in the top level [README](../README.md)
 
 ## Run the example
 
