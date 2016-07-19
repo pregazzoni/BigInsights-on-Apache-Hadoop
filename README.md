@@ -76,5 +76,5 @@ Find us on [Stack Overflow](https://stackoverflow.com/questions/tagged/biginsigh
 
 ### Contributing updates to the guidelines
 
-To update the guidelines, please fork the repository, make changes, and create a pull request. When updating one of the sample READMEs, update the other sample versions where applicable.
+To update the guidelines, please fork the repository, make changes, and create a pull request.
 
