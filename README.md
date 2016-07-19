@@ -14,9 +14,9 @@ The core idea is that you can run an example project to see it working against y
 #### Mandatory
 
 - A client machine (e.g. laptop) connected to the internet
-- A BigInsights cluster *(setup instructions: [Bluemix](https://new-console.ng.bluemix.net/docs/services/BigInsights/index.html))*
-- Java 8 JDK (not JRE) installed on your client machine *(installation instructions: [OS X](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html#CHDBADCG) / [Linux](https://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html#BJFGGEFG) / [Windows](https://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_jdk_install.html#CHDEBCCJ))*
-- Git application installed on your client machine *(installation instructions: [Linux / OS X / Windows](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git))*
+- A BigInsights cluster *([Bluemix](https://new-console.ng.bluemix.net/docs/services/BigInsights/index.html) setup instructions)*
+- Java 8 JDK (not JRE) installed on your client machine *([OS X](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html#CHDBADCG) / [Linux](https://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html#BJFGGEFG) / [Windows](https://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_jdk_install.html#CHDEBCCJ) installation instructions)*
+- Git application installed on your client machine *([Linux / OS X / Windows](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installation instructions)*
 
 NOTE: You do NOT need to install gradle, the gradlew scripts mentioned below will install gradle for you
 
