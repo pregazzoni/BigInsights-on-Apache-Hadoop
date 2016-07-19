@@ -26,9 +26,12 @@ See also:
 
 ## Devloper experience
 
-- Be comfortable using Windows, OS X or *nix command prompts
-- Be able to read code written in a high level language such as [Groovy](http://www.groovy-lang.org/)
-- It is recommended that you understand the [Gradle](https://gradle.org/) build tool.  Some free training is available [here](https://www.udacity.com/course/gradle-for-android-and-java--ud867)
+Developers will gain the most from these examples if they are:
+
+- Comfortable using Windows, OS X or *nix command prompts
+- Familiar with compiling and running java applications
+- Able to read code written in a high level language such as [Groovy](http://www.groovy-lang.org/)
+- Familiar with the [Gradle](https://gradle.org/) build tool
 
 ## Application Requirements
 
@@ -36,11 +39,9 @@ You have meet the Pre-Requisites and have followed the Setup Instructions in the
 
 ## Run the example
 
-To run the example [Ls.groovy](./Ls.groovy):
+To run the example [Ls.groovy](./Ls.groovy), in a command prompt window:
 
-- In a command prompt window:
-
-   - change into the directly containing this README and run the following
+   - change into the directly containing this example and run the following
       - `./gradlew Ls` (OS X / *nix)
       - `gradlew.bat Ls` (Windows)
    - You can also run the example by changing into the top level project folder, and then using the gradle `-p` argument to provide the path to this example
@@ -51,7 +52,13 @@ Replace `Ls` with `Mkdir` to run the example to create a directory in HDFS, or `
 
 ## Decomposition Instructions
 
-Instructions on how a developer/architect would take the sample application and extract the relevant code for reuse. For example, if the app is a "Hello World" to demonstrate integration of a specific service, explain what code is relevant to this integration and how one would reuse it.
+The examples uses a gradle build file [./build.gradle](./build.gradle) when you run `./gradlew` or `gradle.bat`.  The build.gradle for this example does the following:
 
-The example uses a gradle build file [./build.gradle](./build.gradle) to retrieve the knox client libraries, set up a groovy session and execute the groovy scripts.
+- download the knox java client library and make it available to Java
+- download the groovy library and make it available to Java
+- compile the groovy script so that it is executable by Java
+- read the connection details in your connection.properties file
+- run the compiled groovy script as a Java application, making the connection details available as environment variables
+
+All code is well commented, and it is suggested that you browser the build.gradle and *.groovy scripts to understand in more detail how they work.
 
