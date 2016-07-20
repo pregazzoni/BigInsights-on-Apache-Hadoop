@@ -58,7 +58,7 @@ BUILD SUCCESSFUL
 
 Total time: 4.899 secs
 ```
-The output shows the list of files and directories, e.g. `[app-logs, apps, biginsights, ibmpacks, iop, mapred, mr-history, secureDir, securedir, tmp, user]`
+The output above shows the list of files and directories on *my cluster*, e.g. `[app-logs, apps, biginsights, ibmpacks, iop, mapred, mr-history, secureDir, securedir, tmp, user]`.  You may have different files and directories on *your cluster* so your output may be different.
 
 *********************************************************************
 
