@@ -56,5 +56,5 @@ The examples uses a gradle build file [build.gradle](./build.gradle) when you ru
 - read the connection details in your connection.properties file
 - run the compiled groovy script as a Java application, making the connection details available as environment variables
 
-All code is well commented, and it is suggested that you browser the build.gradle and *.groovy scripts to understand in more detail how they work.
+All code is well commented and it is suggested that you browse the build.gradle and *.groovy scripts to understand in more detail how they work.
 
