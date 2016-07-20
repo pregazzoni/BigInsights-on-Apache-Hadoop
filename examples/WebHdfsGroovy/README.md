@@ -44,7 +44,7 @@ To run the example [Ls.groovy](./Ls.groovy), in a command prompt window:
 
 ```bash
 biginsight-bluemix-docs $ cd examples/WebHdfsGroovy
-biginsight-bluemix-docs/examples/WebHdfsGroovy $./gradlew Ls
+biginsight-bluemix-docs/examples/WebHdfsGroovy $ ./gradlew Ls
 :compileJava UP-TO-DATE
 ...
 
