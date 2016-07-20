@@ -43,8 +43,8 @@ To run the example [Ls.groovy](./Ls.groovy), in a command prompt window:
    - some output from running the command on my machine is shown below 
 
 ```bash
-biginsight-examples $ cd examples/WebHdfsGroovy
-biginsight-examples/examples/WebHdfsGroovy $./gradlew Ls
+biginsight-bluemix-docs $ cd examples/WebHdfsGroovy
+biginsight-bluemix-docs/examples/WebHdfsGroovy $./gradlew Ls
 :compileJava UP-TO-DATE
 ...
 
