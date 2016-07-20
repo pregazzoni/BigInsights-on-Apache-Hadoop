@@ -43,14 +43,6 @@ Next, see the section below for details of running an example script.
 
 After performing the above setup steps, you can look at the README for the example to understand more about the example.  See the list of examples [here](examples/README.md). 
 
-
-*********************************************************************
-
-### List of examples
-
-Each example project has a README.md file describing how to run the project.  All of the example projects are available in the [[examples](examples/README.md)] folder.
-
-
 *********************************************************************
 
 ### Getting Help
