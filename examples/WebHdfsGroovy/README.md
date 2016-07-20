@@ -37,14 +37,28 @@ You have met the [pre-requisites](../../README.md#pre-requisites) and have follo
 
 To run the example [Ls.groovy](./Ls.groovy), in a command prompt window:
 
-   - change into the directory containing this example and run the following
+   - change into the directory containing this example and run gradle to execute the example
       - `./gradlew Ls` (OS X / *nix)
       - `gradlew.bat Ls` (Windows)
-   - You can also run the example by changing into the top level project folder, and then using the gradle `-p` argument to provide the path to this example
-      - `./gradlew -p examples/WebHdfsGroovy Ls` (OS X / *nix)
-      - `gradlew.bat -p examples/WebHdfsGroovy Ls` (Windows)
+   - the example output will 
 
-Replace `Ls` with `Mkdir` to run the example to create a directory in HDFS, or `Put` to upload a file to HDFS.
+```bash
+biginsight-examples $ cd examples/WebHdfsGroovy
+biginsight-examples/examples/WebHdfsGroovy $./gradlew Ls
+:compileJava UP-TO-DATE
+...
+
+>> [app-logs, apps, biginsights, ibmpacks, iop, mapred, mr-history, secureDir, securedir, tmp, user]
+
+>> Ls test was successful.
+
+BUILD SUCCESSFUL
+
+Total time: 4.899 secs
+```
+The output above shows the list of files and directories on *my cluster*, e.g. `[app-logs, apps, biginsights, ibmpacks, iop, mapred, mr-history, secureDir, securedir, tmp, user]`.  You may have different files and directories on *your cluster* so your output may be different.
+ 
+**NOTE:** Replace `Ls` with `Mkdir` to run the example to create a directory in HDFS, or `Put` to upload a file to HDFS.
 
 ## Decomposition Instructions
 
