@@ -43,7 +43,7 @@ Next, see the section below for details of running an example script.
 
 After performing the above setup steps, you can look at the README.md file for the example you wish to run to find:
 
-- more information describing the example
+- more information describing the purpose of the example
 - detailed instructions for running the example
 
 See the list of examples [here](examples/README.md). 
