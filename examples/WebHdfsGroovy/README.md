@@ -37,7 +37,7 @@ You have met the [pre-requisites](../../README.md#pre-requisites) and have follo
 
 To run the example [Ls.groovy](./Ls.groovy), in a command prompt window:
 
-   - change into the directly containing this example and run the following
+   - change into the directory containing this example and run the following
       - `./gradlew Ls` (OS X / *nix)
       - `gradlew.bat Ls` (Windows)
    - You can also run the example by changing into the top level project folder, and then using the gradle `-p` argument to provide the path to this example
@@ -48,7 +48,7 @@ Replace `Ls` with `Mkdir` to run the example to create a directory in HDFS, or `
 
 ## Decomposition Instructions
 
-The examples uses a gradle build file [./build.gradle](./build.gradle) when you run `./gradlew` or `gradle.bat`.  The build.gradle for this example does the following:
+The examples uses a gradle build file [build.gradle](./build.gradle) when you run `./gradlew` or `gradle.bat`.  The build.gradle for this example does the following:
 
 - download the knox java client library and make it available to Java
 - download the groovy library and make it available to Java
