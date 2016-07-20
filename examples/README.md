@@ -1,4 +1,4 @@
-See the README file in each project for instructions how to run the example.
+This page lists all of the examples.
 
 *********************************************************************
 
