@@ -43,22 +43,6 @@ Next, see the section below for details of running an example script.
 
 After performing the above setup steps, you can look at the README for the example to understand more about the example.  See the list of examples [here](examples/README.md). 
 
-For demonstration purposes, we will run one of the examples now. Here is how you can run the WebHdfsGroovy Ls example which lists the files and directories in the hdfs root directory:
-
-```bash
-biginsight-examples snowch$ ./gradlew -p examples/WebHdfsGroovy Ls
-:compileJava UP-TO-DATE
-...
-
->> [app-logs, apps, biginsights, ibmpacks, iop, mapred, mr-history, secureDir, securedir, tmp, user]
-
->> Ls test was successful.
-
-BUILD SUCCESSFUL
-
-Total time: 4.899 secs
-```
-The output above shows the list of files and directories on *my cluster*, e.g. `[app-logs, apps, biginsights, ibmpacks, iop, mapred, mr-history, secureDir, securedir, tmp, user]`.  You may have different files and directories on *your cluster* so your output may be different.
 
 *********************************************************************
 
