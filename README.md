@@ -43,7 +43,7 @@ Next, see the section below for details of running an example script.
 
 After performing the above setup steps, you can look at the README for the example to understand more about the example.  See the list of examples [here](examples/README.md). 
 
-As a taster, here is how you can run the WebHdfsGroovy Ls example which lists the files and directories in the hdfs root directory:
+For demonstration purposes, we will run one of the examples now. Here is how you can run the WebHdfsGroovy Ls example which lists the files and directories in the hdfs root directory:
 
 ```bash
 biginsight-examples snowch$ ./gradlew -p examples/WebHdfsGroovy Ls
