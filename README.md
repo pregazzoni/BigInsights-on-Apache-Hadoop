@@ -40,7 +40,7 @@ Next, see the section below for details of running an example script.
 *********************************************************************
 ### Running the scripts
 
-After performing the above setup steps, you can look at the README for the example to understand more about the example.  See the list of examples [here](examples). 
+After performing the above setup steps, you can look at the README for the example to understand more about the example.  See the list of examples [here](examples/README.md). 
 
 As a taster, here is how you can run the WebHdfsGroovy Ls example which lists the files and directories in the hdfs root directory:
 
@@ -63,7 +63,7 @@ The output shows the list of files and directories, e.g. `[app-logs, apps, bigin
 
 ### List of examples
 
-Each example project has a README.md file describing how to run the project.  All of the example projects are available in the [[examples](examples)] folder.
+Each example project has a README.md file describing how to run the project.  All of the example projects are available in the [[examples](examples/README.md)] folder.
 
 
 *********************************************************************
