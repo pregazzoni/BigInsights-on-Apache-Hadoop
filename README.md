@@ -28,7 +28,7 @@ Follow these steps on your client machine.  If you encounter an issue, see the [
 - Copy `connection.properties_template` to `connection.properties`
 - Edit `connection.properties` to add your connection details for BigInsights
 - In `connection.properties` uncomment the line `# known_hosts:allowAnyHosts`
-- Download the ssl certificate
+- Download the cluster ssl certificate
   - Run `./gradlew DownloadCertificate` (OS X / *nix) 
   - Run `gradlew.bat DownloadCertificate` (Windows)
 - Download libraries from the cluster
