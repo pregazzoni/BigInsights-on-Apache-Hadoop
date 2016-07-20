@@ -15,14 +15,10 @@ There are three examples in this folder written in the [Groovy Language](http://
 - [Mkdir.groovy](./Mkdir.groovy) - this example creates a folder in HDFS
 - [Put.groovy](./Put.groovy) - this example uploads a file to HDFS
 
-More information on WebHDFS / Apache Knox:
-
-- [WebHDFS REST API](http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/WebHDFS.html)
-- [BigInsights Apache Knox documentation](https://www.ibm.com/support/knowledgecenter/en/SSPT3X_4.2.0/com.ibm.swg.im.infosphere.biginsights.admin.doc/doc/knox_overview.html)
-
 See also:
 
-- [[coming soon]] [WebHdfsCurl example](../WebHdfsCurl) - this example will be useful for developers who want to use only REST to interact with the API and don't want to use the knox client library, e.g. non-JVM language developers. 
+- [BigInsights Apache Knox documentation](https://www.ibm.com/support/knowledgecenter/en/SSPT3X_4.2.0/com.ibm.swg.im.infosphere.biginsights.admin.doc/doc/knox_overview.html)
+
 
 ## Developer experience
 
