@@ -40,7 +40,7 @@ To run the example [Ls.groovy](./Ls.groovy), in a command prompt window:
    - change into the directory containing this example and run gradle to execute the example
       - `./gradlew Ls` (OS X / *nix)
       - `gradlew.bat Ls` (Windows)
-   - the example output will 
+   - some output from running the command on my machine is shown below 
 
 ```bash
 biginsight-examples $ cd examples/WebHdfsGroovy
