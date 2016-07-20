@@ -29,7 +29,7 @@ Developers will gain the most from these examples if they are:
 - Able to read code written in a high level language such as [Groovy](http://www.groovy-lang.org/)
 - Familiar with the [Gradle](https://gradle.org/) build tool
 
-## Application Requirements
+## Example Requirements
 
 You have met the [pre-requisites](../../README.md#pre-requisites) and have followed the [setup instructions](../../README.md#setup-instructions) in the top level [README](../../README.md)
 
