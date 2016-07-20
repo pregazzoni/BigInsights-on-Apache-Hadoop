@@ -18,8 +18,9 @@ The core idea is that you can run an example project to see it working against y
 - Java 8 JDK (not JRE) installed on your client machine *([OS X](https://docs.oracle.com/javase/8/docs/technotes/guides/install/mac_jdk.html#CHDBADCG) / [Linux](https://docs.oracle.com/javase/8/docs/technotes/guides/install/linux_jdk.html#BJFGGEFG) / [Windows](https://docs.oracle.com/javase/8/docs/technotes/guides/install/windows_jdk_install.html#CHDEBCCJ) installation instructions)*
 - Git application installed on your client machine *([Linux / OS X / Windows](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installation instructions)*
 
-NOTE 1: You do NOT need to install gradle, the gradlew scripts mentioned below will install gradle for you
-NOTE 2: Some examples may not work if you connect to the Internet through a non-transparent proxy server 
+NOTE:
+- You do NOT need to install gradle, the gradlew scripts mentioned below will install gradle for you
+- Some examples may not work if you connect to the Internet through a non-transparent proxy server 
 
 ### Setup Instructions
 
