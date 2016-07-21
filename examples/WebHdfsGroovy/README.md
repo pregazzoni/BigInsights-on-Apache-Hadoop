@@ -9,12 +9,6 @@ BigInsights for Apache Hadoop clusters are secured using [Apache Knox](https://k
 
 The Apache Knox project provides a [Java client library](https://cwiki.apache.org/confluence/display/KNOX/Client+Usage) and this can be used for interacting with the REST API.  Using a library is usally more productive because the library provides a higher level of abstraction than when working directly with the REST API.
 
-There are three examples in this folder written in the [Groovy Language](http://www.groovy-lang.org/) and the Knox Java client library:
-
-- [Ls.groovy](./Ls.groovy) - this example lists files and folders in the root HDFS folder
-- [Mkdir.groovy](./Mkdir.groovy) - this example creates a folder in HDFS
-- [Put.groovy](./Put.groovy) - this example uploads a file to HDFS
-
 See also:
 
 - [BigInsights Apache Knox documentation](https://www.ibm.com/support/knowledgecenter/en/SSPT3X_4.2.0/com.ibm.swg.im.infosphere.biginsights.admin.doc/doc/knox_overview.html)
@@ -34,6 +28,12 @@ Developers will gain the most from these examples if they are:
 You have met the [pre-requisites](../../README.md#pre-requisites) and have followed the [setup instructions](../../README.md#setup-instructions) in the top level [README](../../README.md)
 
 ## Run the example
+
+There are three examples in this folder written in the [Groovy Language](http://www.groovy-lang.org/) and the Knox Java client library:
+
+- [Ls.groovy](./Ls.groovy) - this example lists files and folders in the root HDFS folder
+- [Mkdir.groovy](./Mkdir.groovy) - this example creates a folder in HDFS
+- [Put.groovy](./Put.groovy) - this example uploads a file to HDFS
 
 To run the example [Ls.groovy](./Ls.groovy), in a command prompt window:
 
