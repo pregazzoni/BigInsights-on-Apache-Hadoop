@@ -41,7 +41,7 @@ Follow these steps on your client machine.  If you encounter an issue, see the [
 Next, see the section below for details of running an example script.
 
 *********************************************************************
-### Running the scripts
+### Running the examples
 
 After performing the above setup steps, you can look at the README.md file for the example you wish to run to find:
 
