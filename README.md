@@ -1,7 +1,5 @@
-*********************************************************************
-### README 
 
-*********************************************************************
+# Getting Started with BigInsights for Apache Hadoop on IBM Bluemix
 
 This repository contains example projects to help you quickly get started with BigInsights. Following the steps below on your client machine, it should take you less than 5 minutes to run any of the example projects against a BigInsights cluster. The projects are tested on BigInsights on Cloud (bluemix) but they should also work for BigInsights on-premise.
 
