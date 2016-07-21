@@ -1,4 +1,8 @@
-### gradlew: line 2: $'\r': command not found
+*********************************************************************
+### FAQ
+*********************************************************************
+
+#### gradlew: line 2: $'\r': command not found
 
 cygwin users may encounter the following error:
 
@@ -19,7 +23,7 @@ The solution is to use gradlew.bat, e.g.
 $ ../gradlew.bat RunSquirrel
 ```
 
-## Failed to create MD5 hash for file
+#### Failed to create MD5 hash for file
 
 ```
 $ ../gradlew.bat RunSquirrel
@@ -37,7 +41,7 @@ The solution is to set the `--project-cache-dir` argument, e.g.
 $ ../gradlew.bat --project-cache-dir ../ RunSquirrel
 ```
 
-## Squirrel connection error - SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed
+#### Squirrel connection error - SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed
 
 This probably means that you have changed your connection.properties to point to a different cluster and you are still using the old cluster's certificate.  To fix this:
 
@@ -45,7 +49,7 @@ This probably means that you have changed your connection.properties to point to
 - run `./gradlew DownloadCertificate` to download the new certificate
 - remove the old truststore.jks files.  From the top level folder, you can run `./gradlew DeleteTruststores` to do this
 
-## Could not resolve all dependencies for / Could not download ...
+#### Could not resolve all dependencies for / Could not download ...
 
 You may sometimes see an error like this:
 
