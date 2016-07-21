@@ -29,7 +29,7 @@ You have met the [pre-requisites](../../README.md#pre-requisites) and have follo
 
 ## Run the example
 
-There are three examples in this folder written in the [Groovy Language](http://www.groovy-lang.org/) and the Knox Java client library:
+There are three examples in this folder written in the [Groovy Language](http://www.groovy-lang.org/) and using the Knox Java client library:
 
 - [Ls.groovy](./Ls.groovy) - this example lists files and folders in the root HDFS folder
 - [Mkdir.groovy](./Mkdir.groovy) - this example creates a folder in HDFS
