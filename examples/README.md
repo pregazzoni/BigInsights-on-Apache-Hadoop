@@ -7,3 +7,7 @@ This page lists all of the examples.
 - List directory contents, Create a directory and Upload a file using Groovy [[WebHdfsGroovy](./WebHdfsGroovy/README.md)]
 
 *********************************************************************
+
+More examples coming soon ...
+
+*********************************************************************
