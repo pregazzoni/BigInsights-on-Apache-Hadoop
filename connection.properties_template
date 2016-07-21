@@ -20,9 +20,10 @@ password:changeme
 
 # These properties are required
 
-# the ambari host is usually the same as the gateway
+# the ambari host name is usually the same as the gateway host name
 ambariUrl:https://changeme:9443/api
 
+# the ambari username and password are usually the same as those for the gateway
 # E.g. ambariUsername:biadmin
 ambariUsername:changeme
 ambariPassword:changeme
@@ -35,7 +36,7 @@ ambariPassword:changeme
 # known_hosts:allowAnyHosts
 
 # IMPORTANT: if you don't want to disable ssh host key checking, you will need to
-# ssh into your mastermanager node (and master-2 node where applicable) and accept 
+# ssh into your mastermanager node (and other BigInsight nodes) and accept 
 # the certificate fingerprint presented to you by the ssh client
 
 ################################################################################
