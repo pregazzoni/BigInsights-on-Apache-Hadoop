@@ -99,11 +99,8 @@ The output above shows:
 
 The examples uses a gradle build file [build.gradle](./build.gradle) when you run `./gradlew` or `gradle.bat`.  The build.gradle for this example does the following:
 
-- download the knox java client library and make it available to Java
-- download the groovy library and make it available to Java
-- compile the groovy script so that it is executable by Java
-- read the connection details in your connection.properties file
-- run the compiled groovy script as a Java application, making the connection details available as environment variables
+- compile the Map/Reduce code.  The `apply plugin: 'java'` does this for you.  See the gradle [docs](https://docs.gradle.org/current/userguide/java_plugin.html) for more information.
+- create a Jar file with the compiled Map/Reduce code.  The `jar { ... }` statement does this for you.  See the gradle [docs](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html) for more information.
 
 All code is well commented and it is suggested that you browse the build.gradle and *.groovy scripts to understand in more detail how they work.
 
