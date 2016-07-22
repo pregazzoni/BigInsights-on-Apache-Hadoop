@@ -105,10 +105,10 @@ The examples uses a gradle build file [build.gradle](./build.gradle) when you ru
 
 The [Example.groovy](./Example.groovy) script performs the following:
 
-- Create an Oozie workflow XML file
-- Create an Oozie configuration XML file
+- Create an Oozie workflow XML document
+- Create an Oozie configuration XML document
 - Create a HTTP session on the BigInsights Knox REST API 
-- Upload the workflow and configuration files over WebHDFS
+- Upload the workflow XML file over WebHDFS
 - Upload an Apache 2.0 LICENSE file over WebHDFS
 - Upload the jar file (containing the Map/Reduce code) over WebHDFS
 - Submit the Oozie workflow job using Knox REST API for Oozie
