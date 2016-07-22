@@ -97,10 +97,23 @@ The output above shows:
  
 ## Decomposition Instructions
 
-The examples uses a gradle build file [build.gradle](./build.gradle) when you run `./gradlew` or `gradle.bat`.  The build.gradle for this example does the following:
+The examples uses a gradle build file [build.gradle](./build.gradle) when you run `./gradlew` or `gradle.bat`.  The build.gradle does the following:
 
-- compile the Map/Reduce code.  The `apply plugin: 'java'` does this for you.  See the gradle [docs](https://docs.gradle.org/current/userguide/java_plugin.html) for more information.
-- create a Jar file with the compiled Map/Reduce code.  The `jar { ... }` statement does this for you.  See the gradle [docs](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html) for more information.
+- compile the Map/Reduce code.  The `apply plugin: 'java'` statement controls this [more info](https://docs.gradle.org/current/userguide/java_plugin.html).
+- create a Jar file with the compiled Map/Reduce code.  The `jar { ... }` statement controls this [more info](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html).
+- execute the [Example.groovy](./Example.groovy) script
+
+The [Example.groovy](./Example.groovy) script performs the following:
+
+- Create an Oozie workflow XML file
+- Create an Oozie configuration XML file
+- Create a HTTP session on the BigInsights Knox REST API 
+- Upload the workflow and configuration files over WebHDFS
+- Upload an Apache 2.0 LICENSE file over WebHDFS
+- Upload the jar file (containing the Map/Reduce code) over WebHDFS
+- Submit the Oozie workflow job using Knox REST API for Oozie
+- Every second, check the status of the Oozie workflow job using Knox REST API for Oozie
+- When the Oozie workflow job successfully finishes, download the wordcount output from the Map/Reduce job
 
 All code is well commented and it is suggested that you browse the build.gradle and *.groovy scripts to understand in more detail how they work.
 
