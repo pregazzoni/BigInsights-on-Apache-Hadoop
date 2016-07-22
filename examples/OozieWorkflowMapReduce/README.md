@@ -1,6 +1,6 @@
 ## Overview
 
-This example shows how to compile a Java Map/Reduce program and programmatically submit it to a BigInsights cluster and wait for the job response.  An example use cases for programmtically running Map/Reduce jobs on the BigInsights cluster is a client application that needs to process data in BigInsights and send the results of processing to a third party application.  Here the client application could be an [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) tool job, a [Microservice](https://en.wikipedia.org/wiki/Microservices), or some other custom application. 
+This example shows how to compile a Java Map/Reduce program and programmatically submit it to a BigInsights cluster and wait for the job response.  An example use cases for programmatically running Map/Reduce jobs on the BigInsights cluster is a client application that needs to process data in BigInsights and send the results of processing to a third party application.  Here the client application could be an [ETL](https://en.wikipedia.org/wiki/Extract,_transform,_load) tool job, a [Microservice](https://en.wikipedia.org/wiki/Microservices), or some other custom application. 
 
 This example uses [Apache Oozie](https://oozie.apache.org/) to run and monitor the Map/Reduce job.  Oozie is a workflow scheduler system to manage Apache Hadoop jobs.
 
