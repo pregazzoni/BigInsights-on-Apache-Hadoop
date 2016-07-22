@@ -101,7 +101,7 @@ The examples uses a gradle build file [build.gradle](./build.gradle) when you ru
 
 - compile the Map/Reduce code.  The `apply plugin: 'java'` statement controls this [more info](https://docs.gradle.org/current/userguide/java_plugin.html).
 - create a Jar file with the compiled Map/Reduce code.  The `jar { ... }` statement controls this [more info](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.bundling.Jar.html).
-- execute the [Example.groovy](./Example.groovy) script
+- compile and execute the [Example.groovy](./Example.groovy) script.  The `task('OozieMapReduce' ...)` statement controls this [more info](https://docs.gradle.org/current/dsl/org.gradle.api.tasks.JavaExec.html)
 
 The [Example.groovy](./Example.groovy) script performs the following:
 
