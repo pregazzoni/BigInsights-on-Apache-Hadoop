@@ -44,37 +44,34 @@ This example consists of the following sub examples:
 - [build.gradle](./build.gradle) - Gradle script to compile and package the Map/Reduce code and execute the Example.groovy script 
 
 
-To run the examples, open a command prompt window:
+To run the one of the examples, open a command prompt window:
 
    - change into the directory containing this example and run gradle to execute the example
-      - `./gradlew Example` (OS X / *nix)
-      - `gradlew.bat Example` (Windows)
+      - `./gradlew Connect` (OS X / *nix)
+      - `gradlew.bat Connect` (Windows)
    - some output from running the command on my machine is shown below 
 
 ```bash
 biginsight-bluemix-docs $ cd examples/BigSQLGroovy
-biginsight-bluemix-docs/examples/BigSQLGroovy $ ./gradlew Example
+biginsight-bluemix-docs/examples/BigSQLGroovy $ ./gradlew Connect
+Defining custom 'clean' task when using the standard Gradle lifecycle plugins has been deprecated and is scheduled to be removed in Gradle 3.0
 :CreateTrustStore
 Certificate was added to keystore
 :SetupLibs
-Attepmting to copy /Users/pierreregazzoni/biginsight-bluemix-docs/downloads/db2jcc.jar to /Users/pierreregazzoni/biginsight-bluemix-docs/examples/BigSQLGroovy/lib
-Attepmting to copy /Users/pierreregazzoni/biginsight-bluemix-docs/downloads/db2jcc4.jar to /Users/pierreregazzoni/biginsight-bluemix-docs/examples/BigSQLGroovy/lib
-Attepmting to copy /Users/pierreregazzoni/biginsight-bluemix-docs/downloads/db2jcc_license_cu.jar to /Users/pierreregazzoni/biginsight-bluemix-docs/examples/BigSQLGroovy/lib
+Attepmting to copy /Users/pierreregazzoni/BigInsights-on-Apache-Hadoop/downloads/db2jcc.jar to /Users/pierreregazzoni/BigInsights-on-Apache-Hadoop/examples/BigSQLGroovy/lib
+Attepmting to copy /Users/pierreregazzoni/BigInsights-on-Apache-Hadoop/downloads/db2jcc4.jar to /Users/pierreregazzoni/BigInsights-on-Apache-Hadoop/examples/BigSQLGroovy/lib
+Attepmting to copy /Users/pierreregazzoni/BigInsights-on-Apache-Hadoop/downloads/db2jcc_license_cu.jar to /Users/pierreregazzoni/BigInsights-on-Apache-Hadoop/examples/BigSQLGroovy/lib
 :compileJava UP-TO-DATE
-:compileGroovy UP-TO-DATE
+:compileGroovy
 :processResources UP-TO-DATE
-:classes UP-TO-DATE
+:classes
 :Connect
 
 >> Connectivity test was successful.
-:CreateCsv
-
-Copy data to tmp
-...
 
 BUILD SUCCESSFUL
 
-Total time: 39.642 secs
+Total time: 14.084 secs
 ```
 
 The output above shows:
@@ -83,6 +80,12 @@ The output above shows:
 - CreateTrustore step creates the keystore using your cluster SSL certificate
 - SetupLibs step copies the JDBC jars from the downloads directory into the lib directory
 - the steps performed by each groovy script (output is prefixed by '[Connect](./Connect.groovy)')
+
+To run ALL the examples, open a command prompt window:
+
+   - change into the directory containing this example and run gradle to execute the example
+      - `./gradlew Example` (OS X / *nix)
+      - `gradlew.bat Example` (Windows)
  
 ## Decomposition Instructions
 
