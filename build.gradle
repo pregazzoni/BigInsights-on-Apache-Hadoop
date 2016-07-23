@@ -92,7 +92,7 @@ task('DeleteTruststores') << {
     }
 }
 
-task('DownloadCertificates') << {
+task('DownloadCertificate') << {
 
     def host = mastermanager_hostname
     def port = mastermanager_port
@@ -224,10 +224,8 @@ task('DownloadJdbcJars') {
     
         def bigsql_head = getMasters(props)['BIGSQL_HEAD']
         
-        def isEhaas = mastermanager_hostname.startsWith('ehaasp-')
-
         ssh.run {
-            if (isEhaas) {
+            if (bigsql_head) {
                 def libdir = '/usr/ibmpacks/current/bigsql/db2/java'
                 session(remotes.bicluster_bigsql_head) {
 
@@ -237,10 +235,8 @@ task('DownloadJdbcJars') {
                     get from: "${libdir}/db2jcc4.jar",
                         into: "${projectDir}/downloads/db2jcc4.jar"
 
-                    if (bigsql_head) {
-                        get from: "${libdir}/db2jcc_license_cu.jar",
-                            into: "${projectDir}/downloads/db2jcc_license_cu.jar"
-                    }
+                    get from: "${libdir}/db2jcc_license_cu.jar",
+                        into: "${projectDir}/downloads/db2jcc_license_cu.jar"
                 }
             } else {
                 def libdir = '/usr/iop/current/sqoop-client/lib'
