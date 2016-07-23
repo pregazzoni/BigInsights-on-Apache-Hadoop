@@ -23,7 +23,7 @@ Developers will gain the most from these examples if they are:
 
 ## Example Requirements
 
-You have met the [pre-requisites](../../README.md#pre-requisites) and have followed the [setup instructions](../../README.md#setup-instructions) in the top level [README](../../README.md)
+Your cluster has Big SQL service installed and have met the [pre-requisites](../../README.md#pre-requisites) and have followed the [setup instructions](../../README.md#setup-instructions) in the top level [README](../../README.md)
 
 Specificaly, ensure you have run from top level repo directory the following tasks:
 
@@ -52,8 +52,8 @@ To run the one of the examples, open a command prompt window:
    - some output from running the command on my machine is shown below 
 
 ```bash
-biginsight-bluemix-docs $ cd examples/BigSQLGroovy
-biginsight-bluemix-docs/examples/BigSQLGroovy $ ./gradlew Connect
+$ cd examples/BigSQLGroovy
+$ ./gradlew Connect
 Defining custom 'clean' task when using the standard Gradle lifecycle plugins has been deprecated and is scheduled to be removed in Gradle 3.0
 :CreateTrustStore
 Certificate was added to keystore
