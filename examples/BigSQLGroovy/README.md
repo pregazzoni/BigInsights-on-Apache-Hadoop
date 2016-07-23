@@ -35,12 +35,12 @@ Specificaly, ensure you have run from top level repo directory the following tas
 This example consists of the following sub examples:
 
 - [Connect.groovy](./Connect.groovy) - example with simple jdbc connection to BigSQL
-- [CreateCsv.groovy](./CreateCsv.groovy]) - example to export CSV file from a table
-- [CreateExternal.groovy](./CreateExternal.groovy]) - example with external table in HDFS
-- [Federation.groovy](./Federation.groovy]) - example with Federation to DASDB. Requires some manual setup. See [README_Federation](./README_Federation.md).
-- [Hbase.groovy](./Hbase.groovy]) -  example creating and querying HBASE table from Big SQL
-- [Insert.groovy](./Insert.groovy]) -  example to insert data into Big SQL table
-- [Load.groovy](./Load.groovy]) - example to load data file into Big SQL table
+- [CreateCsv.groovy](./CreateCsv.groovy) - example to export CSV file from a table
+- [CreateExternal.groovy](./CreateExternal.groovy) - example with external table in HDFS
+- [Federation.groovy](./Federation.groovy) - example with Federation to DASHDB. Requires some manual setup. See [README_Federation](./README_Federation.md).
+- [Hbase.groovy](./Hbase.groovy) -  example creating and querying HBASE table from Big SQL
+- [Insert.groovy](./Insert.groovy) -  example to insert data into Big SQL table
+- [Load.groovy](./Load.groovy) - example to load data file into Big SQL table
 - [build.gradle](./build.gradle) - Gradle script to compile and package the Map/Reduce code and execute the Example.groovy script 
 
 
