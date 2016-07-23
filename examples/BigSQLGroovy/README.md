@@ -96,5 +96,7 @@ The examples uses a gradle build file [build.gradle](./build.gradle) when you ru
     - SetupLibs - This task will copy the JDBC driver files under `lib/` directory. Build.gradle also set runtime dependency via following line: `runtime fileTree(dir: 'lib', include: '*.jar')`
 - compile and execute the groovy code
 
+The example task will run all examples: Connect, Insert, Load, Hbase, CreateExternal, CreateCsv, Federation (skipped if requirement not met). You can also execute each individual example one by one.
+
 All code is well commented and it is suggested that you browse the build.gradle and *.groovy scripts to understand in more detail how they work.
 
