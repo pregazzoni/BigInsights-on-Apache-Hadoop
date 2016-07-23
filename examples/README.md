@@ -4,13 +4,13 @@ This page lists all of the examples.
 
 #### Big SQL
 
-- Connects to Big SQL via JDBC [[Connect.groovy](./Connect.groovy)]
-- Export table to CSV file [[CreateCsv.groovy](./CreateCsv.groovy])]
-- Create and query external table to HDFS [[CreateExternal.groovy](./CreateExternal.groovy])]
-- Federation to DashDB [[Federation.groovy](./Federation.groovy])]
-- Create and query HBASE table [[Hbase.groovy](./Hbase.groovy])]
-- Insert and query table [[Insert.groovy](./Insert.groovy])]
-- Load from file and query table [[Load.groovy](./Load.groovy])]
+- Connects to Big SQL via JDBC [[BigSQLGroovy](./BigSQLGroovy/README.md)]
+- Export table to CSV file [[BigSQLGroovy](./BigSQLGroovy/README.md])]
+- Create and query external table to HDFS [[BigSQLGroovy](./BigSQLGroovy/README.md])]
+- Federation to DashDB [[BigSQLGroovy](./BigSQLGroovy/README.md])]
+- Create and query HBASE table [[BigSQLGroovy](./BigSQLGroovy/README.md])]
+- Insert and query table [[BigSQLGroovy](./BigSQLGroovy/README.md])]
+- Load from file and query table [[BigSQLGroovy](./BigSQLGroovy/README.md])]
 
 *********************************************************************
 
