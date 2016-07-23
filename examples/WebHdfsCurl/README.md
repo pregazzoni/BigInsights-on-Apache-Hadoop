@@ -7,11 +7,11 @@ This example shows how to programmatically interact with HDFS on the BigInsights
 
 BigInsights for Apache Hadoop clusters are secured using [Apache Knox](https://knox.apache.org/).  Apache Knox is a REST API Gateway for interacting with Apache Hadoop clusters.  As such, the HDFS service is not available to external clients of the BigInsights cluster, instead external clients interact with HDFS through the [WebHDFS REST API](http://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-hdfs/WebHDFS.html).
 
-The Apache Knox project provides a [Java client library](https://cwiki.apache.org/confluence/display/KNOX/Client+Usage) and this can be used for interacting with the REST API.  Using a library is usally more productive because the library provides a higher level of abstraction than when working directly with the REST API.
+This example uses [cURL](https://curl.haxx.se/) to interact with the REST API. This is useful for developers to understand the REST API so they can emulate the REST calls using their programming language features.
 
 See also:
 
-- [WebHdfsCurl Example](../WebHdfsCurl/README.md) - similar to this example, but directly interacts with the REST API rather than using a library.  This will be useful for developers using non-JVM based languages, or JVM language developers who don't want to use a library to interact with the REST API. 
+- [WebHdfsGroovy Example](../WebHdfsGroovy/README.md) - similar to this example, but uses a Java based library for working with the REST API
 - [BigInsights Apache Knox documentation](https://www.ibm.com/support/knowledgecenter/en/SSPT3X_4.2.0/com.ibm.swg.im.infosphere.biginsights.admin.doc/doc/knox_overview.html)
 
 
@@ -23,20 +23,22 @@ Developers will gain the most from these examples if they are:
 - Familiar with compiling and running java applications
 - Able to read code written in a high level language such as [Groovy](http://www.groovy-lang.org/)
 - Familiar with the [Gradle](https://gradle.org/) build tool
+- Familiar with  [cURL](https://curl.haxx.se/)
 
 ## Example Requirements
 
-You have met the [pre-requisites](../../README.md#pre-requisites) and have followed the [setup instructions](../../README.md#setup-instructions) in the top level [README](../../README.md)
+- You have met the [pre-requisites](../../README.md#pre-requisites) and have followed the [setup instructions](../../README.md#setup-instructions) in the top level [README](../../README.md)
+- You must have [bash](https://www.gnu.org/software/bash/) and [cURL](https://curl.haxx.se/) applications installed and in the PATH.
 
 ## Run the example
 
-There are three examples in this folder written in the [Groovy Language](http://www.groovy-lang.org/) and using the Knox Java client library:
+There are three examples in this folder are:
 
-- [Ls.groovy](./Ls.groovy) - this example lists files and folders in the root HDFS folder
-- [Mkdir.groovy](./Mkdir.groovy) - this example creates a folder in HDFS
-- [Put.groovy](./Put.groovy) - this example uploads a file to HDFS
+- [Ls.sh](./Ls.sh) - this example lists files and folders in the root HDFS folder
+- [Mkdir.sh](./Mkdir.sh) - this example creates a folder in HDFS
+- [Put.sh](./Put.sh) - this example uploads a file to HDFS
 
-To run the example [Ls.groovy](./Ls.groovy), in a command prompt window:
+To run the example [Ls.sh](./Ls.sh), in a command prompt window:
 
    - change into the directory containing this example and run gradle to execute the example
       - `./gradlew Ls` (OS X / *nix)
@@ -44,8 +46,8 @@ To run the example [Ls.groovy](./Ls.groovy), in a command prompt window:
    - some output from running the command on my machine is shown below 
 
 ```bash
-biginsight-bluemix-docs $ cd examples/WebHdfsGroovy
-biginsight-bluemix-docs/examples/WebHdfsGroovy $ ./gradlew Ls
+biginsight-bluemix-docs $ cd examples/WebHdfsCurl
+biginsight-bluemix-docs/examples/WebHdfsCurl $ ./gradlew Ls
 :compileJava UP-TO-DATE
 ...
 
@@ -67,9 +69,8 @@ The examples uses a gradle build file [build.gradle](./build.gradle) when you ru
 
 - download the knox java client library and make it available to Java
 - download the groovy library and make it available to Java
-- compile the groovy script so that it is executable by Java
 - read the connection details in your connection.properties file
-- run the compiled groovy script as a Java application, making the connection details available as environment variables
+- execute the bash shell scripts,  making the connection details available to the scripts as environment variables
 
-All code is well commented and it is suggested that you browse the build.gradle and *.groovy scripts to understand in more detail how they work.
+All code is well commented and it is suggested that you browse the build.gradle and *.sh scripts to understand in more detail how they work.
 
