@@ -20,8 +20,6 @@ See also:
 Developers will gain the most from these examples if they are:
 
 - Comfortable using Windows, OS X or *nix command prompts
-- Familiar with compiling and running java applications
-- Able to read code written in a high level language such as [Groovy](http://www.groovy-lang.org/)
 - Familiar with the [Gradle](https://gradle.org/) build tool
 - Familiar with  [cURL](https://curl.haxx.se/)
 
