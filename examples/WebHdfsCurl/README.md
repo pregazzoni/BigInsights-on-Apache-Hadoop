@@ -48,18 +48,46 @@ To run the example [Ls.sh](./Ls.sh), in a command prompt window:
 ```bash
 biginsight-bluemix-docs $ cd examples/WebHdfsCurl
 biginsight-bluemix-docs/examples/WebHdfsCurl $ ./gradlew Ls
-:compileJava UP-TO-DATE
-...
-
->> [app-logs, apps, biginsights, ibmpacks, iop, mapred, mr-history, secureDir, securedir, tmp, user]
+:Ls
+*   Trying 169.55.88.5...
+* Connected to bi-hadoop-prod-4005.bi.services.us-south.bluemix.net (169.55.88.5) port 8443 (#0)
+* TLS 1.2 connection using TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+* Server certificate: *.bi.services.us-south.bluemix.net
+* Server certificate: DigiCert SHA2 Secure Server CA
+* Server certificate: DigiCert Global Root CA
+* Server auth using Basic with user 'snowch'
+> GET /gateway/default/webhdfs/v1//?op=LISTSTATUS HTTP/1.1
+> Host: bi-hadoop-prod-4005.bi.services.us-south.bluemix.net:8443
+> Authorization: Basic ************
+> User-Agent: curl/7.43.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Set-Cookie: JSESSIONID=1o6pzj8lflxk7u3wiguh1fwpa;Path=/gateway/default;Secure;HttpOnly
+< Expires: Thu, 01 Jan 1970 00:00:00 GMT
+< Cache-Control: no-cache
+< Expires: Sat, 23 Jul 2016 09:07:36 GMT
+< Date: Sat, 23 Jul 2016 09:07:36 GMT
+< Pragma: no-cache
+< Expires: Sat, 23 Jul 2016 09:07:36 GMT
+< Date: Sat, 23 Jul 2016 09:07:36 GMT
+< Pragma: no-cache
+< Server: Jetty(6.1.26-ibm)
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+<
+{ [5 bytes data]
+* Connection #0 to host bi-hadoop-prod-4005.bi.services.us-south.bluemix.net left intact
+ {"FileStatuses":{"FileStatus":[{"accessTime":0,"blockSize":0,"childrenNum":9,"fileId":16935,"group":"hdfs","length":0,"modificationTime":1469253686371,"owner":"ams","pathSuffix":"amshbase","permission":"775","replication":0,"storagePolicy":0,"type":"DIRECTORY"},{"accessTime":0,"blockSize":0,"childrenNum":1,"fileId":16394,"group":"hadoop","length":0,"modificationTime":1469196845692,"owner":"yarn","pathSuffix":"app-logs","permission":"777","replication":0,"storagePolicy":0,"type":"DIRECTORY"},{"accessTime":0,"blockSize":0,"childrenNum":2,"fileId":16389,"group":"hdfs","length":0,"modificationTime":1467263190881,"owner":"hdfs","pathSuffix":"apps","permission":"755","replication":0,"storagePolicy":0,"type":"DIRECTORY"},{"accessTime":0,"blockSize":0,"childrenNum":1,"fileId":16879,"group":"hdfs","length":0,"modificationTime":1467263172854,"owner":"hdfs","pathSuffix":"iop","permission":"755","replication":0,"storagePolicy":0,"type":"DIRECTORY"},{"accessTime":0,"blockSize":0,"childrenNum":1,"fileId":16397,"group":"hdfs","length":0,"modificationTime":1467263051976,"owner":"mapred","pathSuffix":"mapred","permission":"755","replication":0,"storagePolicy":0,"type":"DIRECTORY"},{"accessTime":0,"blockSize":0,"childrenNum":2,"fileId":16399,"group":"hadoop","length":0,"modificationTime":1467263052277,"owner":"mapred","pathSuffix":"mr-history","permission":"777","replication":0,"storagePolicy":0,"type":"DIRECTORY"},{"accessTime":0,"blockSize":0,"childrenNum":0,"encBit":true,"fileId":17153,"group":"biusers","length":0,"modificationTime":1469117673564,"owner":"snowch","pathSuffix":"securedir"       ,"permission":"700","replication":0,"storagePolicy":0,"type":"DIRECTORY"},{"accessTime":0,"blockSize":0,"childrenNum":2,"fileId":16386,"group":"hdfs","length":0,"modificationTime":1469117617021,"owner":"hdfs","pathSuffix":"tmp","permission":"777","replication":0,"storagePolicy":0,"type":"DIRECTORY"},{"accessTime":0,"blockSize":0,"childrenNum":7,"fileId":16387,"group":"hdfs","length":0,"modificationTime":1469117660348,"owner":"hdfs","pathSuffix":"user","permission":"755","replication":0,"storagePolicy":0,"type":"DIRECTORY"}]}}
 
 >> Ls test was successful.
 
+
 BUILD SUCCESSFUL
 
-Total time: 4.899 secs
+Total time: 2.297 secs
 ```
-The output above shows the list of files and directories on *my cluster*, e.g. `[app-logs, apps, biginsights, ibmpacks, iop, mapred, mr-history, secureDir, securedir, tmp, user]`.  You may have different files and directories on *your cluster* so your output may be different.
+The output above shows the output on *my cluster*.  You may have different files and directories on *your cluster* so your output may be different.
  
 **NOTE:** Replace `Ls` with `Mkdir` to run the example to create a directory in HDFS, or `Put` to upload a file to HDFS.
 
@@ -67,10 +95,8 @@ The output above shows the list of files and directories on *my cluster*, e.g. `
 
 The examples uses a gradle build file [build.gradle](./build.gradle) when you run `./gradlew` or `gradle.bat`.  The build.gradle for this example does the following:
 
-- download the knox java client library and make it available to Java
-- download the groovy library and make it available to Java
 - read the connection details in your connection.properties file
-- execute the bash shell scripts,  making the connection details available to the scripts as environment variables
+- execute the bash shell script,  making the connection details available to the script as environment variables
 
 All code is well commented and it is suggested that you browse the build.gradle and *.sh scripts to understand in more detail how they work.
 

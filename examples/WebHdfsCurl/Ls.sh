@@ -16,12 +16,24 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# abort script if any commands return an error
-set -e
-
+# We want to list the contents of the root folder
 DIR="/"
 
-curl -s -i -k -u ${username}:${password} -X GET \
-        "${gateway}/webhdfs/v1/${DIR}?op=LISTSTATUS" | grep 'HTTP/1.1 200 OK'
+# execute curl and save the output
+OUTPUT=$(curl -v -s -i -k -u ${username}:${password} -X GET \
+    "${gateway}/webhdfs/v1/${DIR}?op=LISTSTATUS")
 
-printf "\n>> Ls test was successful.\n\n"
+# was the curl command successful?
+SUCCESS="$(echo $OUTPUT | grep -c 'HTTP/1.1 200 OK')"
+
+# show the output from the curl command
+echo $OUTPUT
+
+if [[ $SUCCESS == 1 ]]
+then
+   printf "\n>> Ls test was successful.\n\n"
+   exit 0
+else
+   printf "\n>> Ls test was not successful.\n\n"
+   exit 1
+fi

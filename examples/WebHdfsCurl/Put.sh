@@ -32,12 +32,12 @@ CMD="curl -s -i -k --negotiate -u ${username}: -X PUT '${gateway}/webhdfs/v1/${D
 echo $CMD
 
 # register the name for the file, and get the location (use tr to strip header CRLF
-#LOCATION=$(curl -s -i -k -u ${username}:${password} -X PUT "${gateway}/webhdfs/v1/${DIR}/${FILE}?op=CREATE" | tr -d '\r' | sed -En "s/^Location: (.*)$/\1/p")
+LOCATION=$(curl -s -i -k -u ${username}:${password} -X PUT "${gateway}/webhdfs/v1/${DIR}/${FILE}?op=CREATE" | tr -d '\r' | sed -En "s/^Location: (.*)$/\1/p")
 
 # cmd to send the file to the location
-#curl -s -i -k -u ${username}:${password} -T ${FILE} -X PUT ${LOCATION} | grep 'HTTP/1.1 201 Created'
+curl -s -i -k -u ${username}:${password} -T ${FILE} -X PUT ${LOCATION} | grep 'HTTP/1.1 201 Created'
 
 # clean up - remove the temporary directory
-#curl -s -i -k -u ${username}:${password} -X DELETE "${gateway}/webhdfs/v1/${DIR}?op=DELETE&recursive=true" | grep 'HTTP/1.1 200 OK' 
+curl -s -i -k -u ${username}:${password} -X DELETE "${gateway}/webhdfs/v1/${DIR}?op=DELETE&recursive=true" | grep 'HTTP/1.1 200 OK' 
 
 printf "\n>> Put test was successful.\n\n"
