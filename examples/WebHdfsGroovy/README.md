@@ -11,6 +11,7 @@ The Apache Knox project provides a [Java client library](https://cwiki.apache.or
 
 See also:
 
+- [WebHdfsCurl Example](../WebHdfsCurl/README.md) - similar to this example, but directly interacts with the REST API rather than using a library.  This will be useful for developers using non-JVM based languages, or JVM language developers who don't want to use a library to interact with the REST API. 
 - [BigInsights Apache Knox documentation](https://www.ibm.com/support/knowledgecenter/en/SSPT3X_4.2.0/com.ibm.swg.im.infosphere.biginsights.admin.doc/doc/knox_overview.html)
 
 
