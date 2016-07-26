@@ -20,6 +20,12 @@ This page lists all of the examples.
 - List directory contents, Create a directory and Upload a file using cURL [[WebHdfsCurl](./WebHdfsCurl/README.md)]
 
 *********************************************************************
+
+#### Hive
+
+- Create and Drop table using Groovy [[HiveGroovy](./HiveGroovy/README.md)]
+
+*********************************************************************
 #### Oozie
 
 - Compile a Map/Reduce Java application and submit it with Oozie [[OozieWorkflowMapReduce](./OozieWorkflowMapReduce/README.md)]
