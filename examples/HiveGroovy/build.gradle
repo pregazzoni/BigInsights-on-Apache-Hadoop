@@ -51,7 +51,7 @@ task('Example', type: JavaExec) {
 
     // import the BigInsights manager certificate
     println ">> Create key store"
-    ant.exec(executable: 'keytool', dir:'./') {
+    ant.exec(executable: "${getKeytoolPath()}", dir:'./') {
         arg(line: '-import -trustcacerts -alias biginsights -file ../../certificate -keystore ./truststore.jks -storepass mypassword -noprompt')
     }
 
