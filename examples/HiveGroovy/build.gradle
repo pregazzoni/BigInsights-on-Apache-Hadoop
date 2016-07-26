@@ -46,11 +46,11 @@ task('Example', type: JavaExec) {
         throw new GradleException("'certificate' file could not be found in ${projectDir.parentFile.parentFile}")
     }
 
-    println "Remove key store"
+    println ">> Remove key store"
     delete './truststore.jks'
 
     // import the BigInsights manager certificate
-    println "Create key store"
+    println ">> Create key store"
     ant.exec(executable: 'keytool', dir:'./') {
         arg(line: '-import -trustcacerts -alias biginsights -file ../../certificate -keystore ./truststore.jks -storepass mypassword -noprompt')
     }
