@@ -29,7 +29,7 @@ Specificaly, ensure you have run from top level repo directory the following tas
 
 ## Run the example
 
-There is one simpe example in this folder written in the [Groovy Language](http://www.groovy-lang.org/):
+There is one simple example in this folder written in the [Groovy Language](http://www.groovy-lang.org/):
 
 - [Example.groovy](./Example.groovy) - this example connects to Hive via JDBC, Creates and Drops a table
 
