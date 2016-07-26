@@ -14,6 +14,13 @@ This page lists all of the examples.
 
 *********************************************************************
 
+#### HBase
+
+- Connects to HBase and check system version, cluster version and status using Groovy [[HBaseGroovy](./HBaseGroovy/README.md)]
+- Manipulate schema and execute CRUD operation using Groovy [[HBaseGroovy](./HBaseGroovy/README.md)]
+
+*********************************************************************
+
 #### Hdfs
 
 - List directory contents, Create a directory and Upload a file using Groovy [[WebHdfsGroovy](./WebHdfsGroovy/README.md)]
