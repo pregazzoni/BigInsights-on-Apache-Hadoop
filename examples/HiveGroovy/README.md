@@ -1,8 +1,9 @@
 ## Overview
 
-This example shows how to connect and execute HIVE SQL against BigInsights cluster. It connects via [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) to send request and process result sets.
+This example shows how to connect and execute HIVE SQL against BigInsights cluster. It connects via [JDBC](https://en.wikipedia.org/wiki/Java_Database_Connectivity) via Hive Server to send request and process result sets.
 
-Apache HIVE is data warehouse software facilitates reading, writing, and managing large datasets residing in HDFS using SQL. Structure can be projected onto data already in HDFS (e.g. external tables).
+Apache HIVE is data warehouse software to facilitate reading, writing, and managing large datasets residing in HDFS using SQL. Structure can be projected onto data already in HDFS (e.g. external tables). 
+
 
 
 See also:
@@ -28,7 +29,7 @@ Specificaly, ensure you have run from top level repo directory the following tas
 
 ## Run the example
 
-There is one simpe example in this folder written in the [Groovy Language](http://www.groovy-lang.org/):
+There is one simple example in this folder written in the [Groovy Language](http://www.groovy-lang.org/):
 
 - [Example.groovy](./Example.groovy) - this example connects to Hive via JDBC, Creates and Drops a table
 
@@ -42,8 +43,8 @@ To run the example [Example.groovy](./Example.groovy), in a command prompt windo
 ```bash
 $ cd examples/HiveGroovy
 $ ./gradlew Example
-Remove key store
-Create key store
+>> Remove key store
+>> Create key store
 :compileJava UP-TO-DATE
 :compileGroovy
 :processResources UP-TO-DATE
